@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="logo">
+            <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="model-img">
+            <img id="mobile" src="./images/hero-mobile.jpg" alt="">
+            <img id="desktop" src="./images/hero-desktop.jpg" alt="">
+        </div>
+        <div class="main-text">
+            <h1><span>WE'RE</span> <br> COMING <br>SOON </h1>
+            <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
+                up-to-date with announcements and our launch deals.</p>
+            <form name="MyForm" action="#" onsubmit="return emailCheck()">
+                <label>
+                    <input type="text" id="Email" name="Email" placeholder="Email Address">
+                </label>
+                <img src="./images/icon-error.svg" id="error-icon" alt="error icon">
+                <button name="email-submit" class="arrow" onclick="emailCheck()">
+                    <img src="./images/icon-arrow.svg" alt="">
+                </button>
+                <p id="error-msg"></p>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

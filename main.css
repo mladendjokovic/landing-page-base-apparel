@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    --desatured-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish: hsl(0, 6%, 24%);
+}
+body{
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+.logo {
+    height: 80px;
+    margin-left: 5%;
+}
+.logo img{
+    width: 140px;
+    padding: 30px 20px 20px 0px;
+}
+#desktop {
+    display: none;
+}
+#mobile {
+    width: 100%;
+    
+}
+.main-text {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+h1 {
+    letter-spacing: 13px;
+    line-height: 120%;
+    font-weight: 600;
+    font-size: 3em;
+}
+h1>span {
+    color: var(--desatured-red);
+    font-weight: 300;
+}
+p {
+    line-height: 120%;
+    color: var(--desatured-red);
+    margin: 20px 0;
+}
+input {
+    margin-top: 20px;
+    width: 100%;
+    padding: 18px;
+    border-radius: 25px;
+    background: transparent;
+    border: 1px solid hsla(0, 77%, 86%, 0.5);
+}
+::placeholder {
+    color:hsl(0, 36%, 70%);
+}
+form {
+    position: relative;
+}
+.arrow, #error-icon {
+    position: absolute;
+}
+.arrow {
+    top: 19px;
+    right: 0;
+    height: 52px;
+    width: 70px;
+    border-radius: 25px;
+    background: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border:none;
+    box-shadow: 2px 5px 4px var(--desatured-red);
+}
+#error-icon {
+    top: 32px;
+    right: 85px;
+    height: 28px;
+    display: none;
+}
+#error-msg {
+    text-align: left;
+    padding-left: 20px;
+}
+@media only screen and (min-width: 520px) {
+
+    .model-img {
+        width: 100%;
+        margin: 0 auto;
+        height: 100vh;
+    }
+    #desktop {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    #mobile{
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    body {
+            background: url("./images/bg-pattern-desktop.svg");
+    }
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 10%;
+        margin: 0;
+    }
+    .logo img {
+        width: unset;
+    }
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+    .model-img {
+        flex: 1;
+        order: 2;
+        max-width: 40%;
+        margin: 0;
+    }
+    .main-text {
+        flex: 1;
+        order: 1;
+        text-align: left;
+        max-width: 40%;
+        margin-left: 10%;
+        align-self: center;
+        margin-top: 110px;
+    }
+
+}
+@media only screen and (min-width: 1300px) {
+    h1 {
+        font-size: 4em;
+    }
+    p {
+        font-size: 1.4em;
+    }
+}
+
