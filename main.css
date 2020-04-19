@@ -34,12 +34,12 @@ body{
     text-align: center;
 }
 h1 {
-    letter-spacing: 13px;
+    letter-spacing: 15px;
     line-height: 120%;
     font-weight: 600;
     font-size: 3em;
 }
-h1>span {
+h1 span {
     color: var(--desatured-red);
     font-weight: 300;
 }
@@ -140,9 +140,6 @@ form {
 @media only screen and (min-width: 1300px) {
     h1 {
         font-size: 4em;
-    }
-    p {
-        font-size: 1.4em;
     }
 }
 
